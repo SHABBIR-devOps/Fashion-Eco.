@@ -1,0 +1,26 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-body text-ink bg-paper dark:bg-dark-bg dark:text-paper antialiased;
+}
+
+h1, h2, h3, h4 {
+  @apply font-display;
+}
+
+::selection {
+  background: #2D3AA8;
+  color: #fff;
+}
+
+/* visible focus ring across the app, keyboard users only */
+:focus-visible {
+  outline: 2px solid #2D3AA8;
+  outline-offset: 2px;
+}
+
+/* thin custom scrollbar for drawers/modals */
+.fm-scrollbar::-webkit-scrollbar { width: 6px; }
+.fm-scrollbar::-webkit-scrollbar-thumb { background: #DAD4C6; border-radius: 4px; }
